@@ -53,7 +53,7 @@ const sendMessage = async (params, res, status) => {
     getUsers(async (users) => {
       for (i = 0; i < users.length; i++) {
         const user = users[i];
-        await sleep(10000);
+        await sleep(20000);
         const id = `591${user.phone}@s.whatsapp.net`;
         sock
           .sendMessage(id, { text: user.message })
