@@ -1,0 +1,2 @@
+x = "HOLA"
+print(x)
